@@ -1,6 +1,6 @@
 {
   "name": "yahooWeather",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "another AMD compatible weather plugin",
   "description": "get the current weather using a zip code or latitude/longitude",
   "author": {
