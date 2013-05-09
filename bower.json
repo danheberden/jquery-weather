@@ -1,0 +1,13 @@
+{
+  "name": "yahooWeather",
+  "main": "src/yahooWeather.js",
+  "ignore": [
+    ".jshintrc",
+    "test",
+    "**/*.md",
+    "**/*.json"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.8.0"
+  }
+}
