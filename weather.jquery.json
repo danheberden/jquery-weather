@@ -1,5 +1,5 @@
 {
-  "name": "yahooWeather",
+  "name": "weather",
   "version": "0.1.1",
   "title": "another AMD compatible weather plugin",
   "description": "get the current weather using a zip code or latitude/longitude",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/danheberden/jquery-yahooWeather.git"
+    "url": "git://github.com/danheberden/jquery-weather.git"
   },
-  "bugs": "https://github.com/danheberden/jquery-yahooWeather/issues",
+  "bugs": "https://github.com/danheberden/jquery-weather/issues",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/danheberden/jquery-yahooWeather/blob/master/LICENSE-MIT"
+      "url": "https://github.com/danheberden/jquery-weather/blob/master/LICENSE-MIT"
     }
   ],
   "dependencies": {

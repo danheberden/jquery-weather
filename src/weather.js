@@ -1,5 +1,11 @@
-/*! another AMD compatible weather plugin - v0.1.0 - 2013-05-09
-* Copyright (c) 2013 Dan Heberden; Licensed MIT */
+/*
+ * yahoo-weather
+ * https://github.com/danheberden/yahoo-weather
+ *
+ * Copyright (c) 2013 Dan Heberden
+ * Licensed under the MIT license.
+ */
+
 (function(window) {
  
   // ends up symbols[code] === symbol
@@ -43,8 +49,8 @@
     }
   }
 
-  function YahooWeather($) {
-    var yahooWeather = function(locale, hollaback) {
+  function Weather($) {
+    var weather = function(locale, hollaback) {
 
       var process = $.Deferred();
       var processPromise = process.promise();
@@ -94,16 +100,16 @@
       });
       return processPromise;
     };
-    return yahooWeather;
+    return weather;
   }
 
   if ( typeof define === "function" && define.amd) {
     define(["jquery"], function (jQuery) { 
-      return new YahooWeather(jQuery); 
+      return new Weather(jQuery); 
     });
   } 
   // assume that jQuery is already loaded since we aren't doing async magic 
   else {
-    window.yahooWeather = new YahooWeather(jQuery);
+    window.weather = new Weather(jQuery);
   }
 }(this));

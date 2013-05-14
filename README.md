@@ -1,35 +1,35 @@
-# Yahoo Weather
+# Weather
 
-Get yahoo weather using zipcode or woeid
+Get weather from zipcode or woeid using yahoo's weather api
 
 ## Getting Started
 
 Use [bower](http://bower.io)
 
 ```
-bower install yahooWeather --save
+bower install weather --save
 ```
 
 #### or
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/danheberden/yahooWeather/master/dist/yahooWeather.min.js
-[max]: https://raw.github.com/danheberden/yahooWeather/master/dist/yahooWeather.js
+[min]: https://raw.github.com/danheberden/jquery-weather/master/dist/weather.min.js
+[max]: https://raw.github.com/danheberden/jquery-weather/master/dist/weather.js
 
 ### Using in your web page
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/yahooWeather.min.js"></script>
+<script src="dist/weather.min.js"></script>
 <script>
 jQuery(document).ready(function($) {
-  yahooWeather('02210', function(err, weather) {
+  weather('02210', function(err, result) {
     if (err) {
       alert('uh oh: ' + err);
       return;
     }
-    alert(weather.condition.temp);
+    alert(result.condition.temp);
   });
 });
 </script>
@@ -38,13 +38,13 @@ jQuery(document).ready(function($) {
 ### Using as an amd module
 
 ```javascript
-require(["components/yahooWeather/yahooWeather"], function(yahooWeather) {
-  yahooWeather('02210', function(err, weather) {
+require(["components/weather/weather"], function(result) {
+  weather('02210', function(err, result) {
     if (err) {
       alert('uh oh: ' + err);
       return;
     }
-    alert(weather.condition.temp);
+    alert(result.condition.temp);
   });
 });
 ```
