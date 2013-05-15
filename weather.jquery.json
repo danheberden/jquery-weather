@@ -1,6 +1,6 @@
 {
   "name": "weather",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "title": "another AMD compatible weather plugin",
   "description": "get the current weather using a zip code or latitude/longitude",
   "author": {
