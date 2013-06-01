@@ -57,4 +57,25 @@
     });
   });
 
+  test('works with zip code', function () {
+    expect(2);
+    stop();
+    weather('02210', function (err, weather) {
+        strictEqual(err, null, 'no error');
+        ok(weather.condition, 'weather\'s condition object returned');
+        start();
+    });
+  });
+
+  test('doesn\'t works with non-US locale', function () {
+    expect(2);
+    stop();
+    weather([47.0397925, 28.835163299999994], function (err, weather) {
+        notEqual(err, null, 'there are errors');
+        equal(weather, undefined, 'weather\'s condition object is not returned');
+        start();
+    });
+  });
+
+
 }());
