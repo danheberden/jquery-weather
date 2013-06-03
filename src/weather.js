@@ -84,7 +84,7 @@
           url: 'http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20location=' + locale + '&format=json'
         });
       }, function() {
-        return $.Deferred.reject('error');
+        return $.Deferred().reject('error');
       });
       processPromise.done(function(data) {
         if (data && data.query && data.query.results && data.query.results.channel && data.query.results.channel.item) {
