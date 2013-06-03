@@ -57,16 +57,6 @@
     });
   });
 
-  test('works with zip code', function () {
-    expect(2);
-    stop();
-    weather('02210', function (err, weather) {
-        strictEqual(err, null, 'no error');
-        ok(weather.condition, 'weather\'s condition object returned');
-        start();
-    });
-  });
-
   test('doesn\'t works with non-US locale', function () {
     expect(2);
     stop();
