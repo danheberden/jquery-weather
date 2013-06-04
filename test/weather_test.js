@@ -57,4 +57,15 @@
     });
   });
 
+  test('doesn\'t works with non-US locale', function () {
+    expect(2);
+    stop();
+    weather([47.0397925, 28.835163299999994], function (err, weather) {
+      notEqual(err, null, 'there are errors');
+      equal(weather, undefined, 'weather\'s condition object is not returned');
+      start();
+    });
+  });
+
+
 }());
