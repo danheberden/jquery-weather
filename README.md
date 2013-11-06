@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
 ### Using as an amd module
 
 ```javascript
-require(["components/weather/weather"], function(result) {
+require(["components/weather/weather"], function(weather) {
   weather('02210', function(err, result) {
     if (err) {
       alert('uh oh: ' + err);
